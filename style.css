@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 50px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.about img {
+    width: 150px;
+    border-radius: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+
+
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.skills {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f5f5f5; /* soft background */
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 0;
+    background: #333;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.skills li:hover {
+    background: #555;
+    transform: translateY(-3px);
+}
+
+.portfolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+  cursor: pointer;
+}
+
+.card:hover {
+      transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(157, 65, 65, 0.3); 
+  background-color: #e0e0ff; 
+}
+
+.contact-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    gap: 60px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.contact-details, .address {
+    text-align: left; 
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.map-container {
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.google-map {
+    width: 600px;
+    height: 250px;
+    border: 0;         
+}
+.google-map {
+        width: 100%;
+        height: 300px;
+    }
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about img {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+    
+    .skills li {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .projects {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
